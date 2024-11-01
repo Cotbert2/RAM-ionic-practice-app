@@ -1,0 +1,7 @@
+{
+  "name": "ram",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

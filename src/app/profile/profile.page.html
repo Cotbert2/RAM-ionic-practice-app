@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="userlist"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{dataCharacter.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> {{dataCharacter.name}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <img src="{{dataCharacter.image}}" alt="{{dataCharacter.name}}" slot="start">
+      <ion-card-subtitle>Specie: {{dataCharacter.species}}</ion-card-subtitle>
+      <ion-card-subtitle>Gender: {{dataCharacter.gender}}</ion-card-subtitle>
+      <ion-card-subtitle>Status {{dataCharacter.status}}</ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

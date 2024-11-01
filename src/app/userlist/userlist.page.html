@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>userlist</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+
+      <ion-col sizeMd="4" offsetMd="4">
+        <ion-list>
+          <ion-item *ngFor="let item of characters" [routerLink]="['/profile/' + item.id]">
+              <ion-avatar slot="start">
+                <img src="{{item.image}}" alt="item.name">
+              </ion-avatar>
+            <ion-label>{{item.name}}</ion-label>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
